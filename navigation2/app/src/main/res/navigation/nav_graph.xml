@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/ekranPowitalny">
+
+    <fragment
+        android:id="@+id/ekranPowitalny"
+        android:name="com.example.navigation.EkranPowitalny"
+        android:label="fragment_ekran_powitalny"
+        tools:layout="@layout/fragment_ekran_powitalny" >
+        <action
+            android:id="@+id/action_ekranPowitalny_to_dodawanieUzytkownika"
+            app:destination="@id/dodawanieUzytkownika" />
+    </fragment>
+    <fragment
+        android:id="@+id/dodawanieUzytkownika"
+        android:name="com.example.navigation.DodawanieUzytkownika"
+        android:label="fragment_dodawanie_uzytkownika"
+        tools:layout="@layout/fragment_dodawanie_uzytkownika" >
+        <action
+            android:id="@+id/action_dodawanieUzytkownika_to_ekranPowitalny"
+            app:destination="@id/ekranPowitalny" />
+    </fragment>
+</navigation>
