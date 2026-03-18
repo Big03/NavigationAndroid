@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_ekranPowitalny_to_dodawanieUzytkownika"
             app:destination="@id/dodawanieUzytkownika" />
+        <action
+            android:id="@+id/action_ekranPowitalny_to_memory"
+            app:destination="@id/memory" />
     </fragment>
     <fragment
         android:id="@+id/dodawanieUzytkownika"
@@ -22,5 +25,38 @@
         <action
             android:id="@+id/action_dodawanieUzytkownika_to_ekranPowitalny"
             app:destination="@id/ekranPowitalny" />
+    </fragment>
+    <fragment
+        android:id="@+id/memory"
+        android:name="com.example.navigation.Memory"
+        android:label="fragment_memory"
+        tools:layout="@layout/fragment_memory" >
+        <action
+            android:id="@+id/action_memory_to_ekranPowitalny"
+            app:destination="@id/ekranPowitalny" />
+        <action
+            android:id="@+id/action_memory_to_listaWynikow"
+            app:destination="@id/listaWynikow" />
+        <action
+            android:id="@+id/action_memory_to_ustawienia"
+            app:destination="@id/ustawienia" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaWynikow"
+        android:name="com.example.navigation.ListaWynikow"
+        android:label="fragment_lista_wynikow"
+        tools:layout="@layout/fragment_lista_wynikow" >
+        <action
+            android:id="@+id/action_listaWynikow_to_memory"
+            app:destination="@id/memory" />
+    </fragment>
+    <fragment
+        android:id="@+id/ustawienia"
+        android:name="com.example.navigation.Ustawienia"
+        android:label="fragment_ustawienia"
+        tools:layout="@layout/fragment_ustawienia" >
+        <action
+            android:id="@+id/action_ustawienia_to_memory"
+            app:destination="@id/memory" />
     </fragment>
 </navigation>

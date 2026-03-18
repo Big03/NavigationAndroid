@@ -12,10 +12,10 @@ import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link DodawanieUzytkownika#newInstance} factory method to
+ * Use the {@link ListaWynikow#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class DodawanieUzytkownika extends Fragment {
+public class ListaWynikow extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class DodawanieUzytkownika extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public DodawanieUzytkownika() {
+    public ListaWynikow() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class DodawanieUzytkownika extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DodawanieUzytkownika.
+     * @return A new instance of fragment ListaWynikow.
      */
     // TODO: Rename and change types and number of parameters
-    public static DodawanieUzytkownika newInstance(String param1, String param2) {
-        DodawanieUzytkownika fragment = new DodawanieUzytkownika();
+    public static ListaWynikow newInstance(String param1, String param2) {
+        ListaWynikow fragment = new ListaWynikow();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,9 +61,9 @@ public class DodawanieUzytkownika extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        View root = inflater.inflate(R.layout.fragment_dodawanie_uzytkownika, container, false);
+        View root = inflater.inflate(R.layout.fragment_lista_wynikow, container, false);
         // Inflate the layout for this fragment
-        Button bt = root.findViewById(R.id.buttonMemory);
+        Button bt = root.findViewById(R.id.buttonListaWynikowReturn);
         bt.setOnClickListener(view ->
                 Navigation.findNavController(view)
                         .navigate(R.id.memory)

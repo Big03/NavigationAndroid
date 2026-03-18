@@ -4,18 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DodawanieUzytkownika">
+    tools:context=".Memory">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dodawanie uzyrkownika" />
+        android:text="Memory" />
 
     <Button
-        android:id="@+id/buttonMemory"
+        android:id="@+id/buttonMemoryReturn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Memory" />
+        android:text="Return" />
+
+    <Button
+        android:id="@+id/buttonListaWynikow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista Wynikow" />
+
+    <Button
+        android:id="@+id/buttonUstawienia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ustawienia" />
 
 </LinearLayout>
