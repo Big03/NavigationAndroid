@@ -61,6 +61,8 @@ public class EkranPowitalny extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
+        Bundle bundle = new Bundle();
+
         View root = inflater.inflate(R.layout.fragment_ekran_powitalny, container, false);
 
         new android.os.Handler(android.os.Looper.getMainLooper()).postDelayed(() -> {
